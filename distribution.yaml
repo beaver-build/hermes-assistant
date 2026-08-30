@@ -1,0 +1,17 @@
+name: assistant
+version: 1.0.0
+description: "个人日程助手：滴答清单（dida365 MCP）日程/想法录入"
+hermes_requires: ">=0.20.0"
+author: "beaver-build"
+license: "MIT"
+env_requires:
+  - name: MCP_DIDA365_API_KEY
+    description: "滴答清单 dida365 MCP 的 Bearer token（config.yaml 的 mcp_servers.dida365 引用）"
+    required: true
+# 安装和更新共用这份路径列表：install 只复制这里列出的路径；
+# update 只替换这些路径（config.yaml 默认保留），不会重建安装方的整个 skills/ 目录。
+distribution_owned:
+  - SOUL.md
+  - config.yaml
+  - skills/productivity/personal-assistant-intake
+  - distribution.yaml

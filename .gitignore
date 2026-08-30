@@ -1,0 +1,11 @@
+# 安全兜底：这些永远不该进分发仓库
+.env
+.env.*
+!.env.EXAMPLE
+auth.json
+*.db
+*.db-*
+memories/
+sessions/
+logs/
+.DS_Store

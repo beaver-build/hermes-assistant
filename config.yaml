@@ -1,0 +1,8 @@
+# 由 Hermes profile distribution 提供，只包含必要配置；模型、工具集、记忆等其余项请运行 `hermes -p assistant setup` 选择。
+_config_version: 39
+mcp_servers:
+  dida365:
+    enabled: true
+    headers:
+      Authorization: Bearer ${MCP_DIDA365_API_KEY}
+    url: https://mcp.dida365.com
